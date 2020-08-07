@@ -1,0 +1,161 @@
+/***************************
+****************************
+Reset Styles
+****************************
+***************************/
+@import 'normalize.css';
+
+html {
+   box-sizing: border-box;
+}
+*,
+*:after,
+*:before{
+   box-sizing: inherit;
+}
+a{
+   color: #748c91;
+   text-decoration: none;
+}
+a:hover{
+   color: #748c91;
+   text-decoration: underline;
+}
+
+
+:root{
+   --btn__primary__bg: #00a4ff;
+   --btn__secondary__bg: transparent;
+}
+
+/***************************
+****************************
+Custom Styles
+****************************
+***************************/
+.page{
+   width: 100%;
+}
+.sides{
+   color: white;
+   width: 100%;
+}
+.first__side{
+   background: url('twitter-bg.png') no-repeat center center;
+   background-size: cover;
+}
+.second__side{
+   background: #1c2325;
+}
+.container{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   padding: 0.7em;
+}
+.content h6{
+   font-size: 1.7em;
+   margin: 0;
+   padding: 0;
+   padding-top: 1.2em;
+}
+.content p{
+   font-size: 14px;
+   font-weight: 700;
+   padding-top: 1.95em;
+}
+.content li{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+}
+button{
+   border: none;
+   border-radius: 1em;
+}
+.content button{
+   display: block;
+   width: 97%;
+   margin: auto;
+   margin-bottom: 0.59em;
+   padding: 0.62em;
+   font-size: 14px;
+   font-weight: 600;
+}
+button:first-of-type{
+   background: var(--btn__primary__bg);
+   color: white;
+}
+button:first-of-type:hover{
+   background: rgba(0, 164, 255, 0.7);
+   outline: none;
+}
+button:last-of-type:hover{
+   background: rgba(0, 164, 255, 0.27);
+   outline: none;
+}
+button:last-of-type{
+   background: var(--btn__secondary__bg);
+   color: white;
+   border: 1px solid var(--btn__primary__bg);
+   color: var(--btn__primary__bg);
+}
+.fonts li{
+   padding: 0.7em;
+   font-size: 19px;
+   font-weight: 700;
+}
+@media (min-width : 48em) {
+   .page{
+      height: 95vh;
+   }
+   .page:after {
+       content: "";
+       display: table;
+       clear: both;
+   }
+   .sides{
+      width: 50%;
+      float: left;
+   }
+   .second__side{
+      float: right;
+   }
+   .container{
+      height: 95vh;
+   }
+   .btn__sm{
+      display: none;
+   }
+}
+
+
+
+/* FOOTER */
+footer{
+   background: #1c2325;
+}
+footer .btn__sm{
+   padding: 20px 15px 20px 15px;
+}
+footer button{
+   width: 45%;
+   padding: 0.4em;
+   margin: auto;
+}
+footer ul{
+   list-style: none;
+   margin: 0;
+   padding: 0;
+   text-align: center;
+}
+footer ul li{
+   display: inline-block;
+   font-size: 11px;
+   color: #748c91;
+   padding: 7px;
+}
+
+
+
+
